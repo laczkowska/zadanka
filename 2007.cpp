@@ -11,7 +11,7 @@ int a;
 int b;
 int test=0;
 int suma=0;
-int i;
+
 
 dzielnik=a;
 limit=b;
@@ -22,22 +22,19 @@ cin >>a;
 cout <<"podaj limit: ";
 cin >>b;
 
-             for(int i=0;i<=b;i++){
-                if(i%a==0){	       
-                test=test+1;
+            for(int j=0;j<=a;j++){
+	        for(int i=0; i*i<=j; i++){
+		        if(j%a==0){
+                    test=test+1;
                 }
 			 }
              if(test==0){
-                suma=suma+i;
+                suma=suma+j;
                 
              }
              test=0;
             
-       
-	   cout<<suma<<"\n";
+        }
+	   cout<<suma;
 
-
-
-
-    }
-
+}
