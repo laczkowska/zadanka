@@ -6,15 +6,17 @@ auto main () -> int
 
 {
 
-int a,b,c;
+float dodawanie;
+float a, b;
 
-cout <<"podaj a: ";
+cout << "podaj a: ";
 cin >>a;
 
-cout <<"podaj b: ";
+cout << "podaj b: ";
 cin >>b;
 
-c=a+b;
+dodawanie=a+b;
 
-cout << c << "\n";
+cout << dodawanie << "\n";
+
 }
