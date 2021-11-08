@@ -6,86 +6,90 @@ auto main () -> int
 
 {
 
-int a,b,c,d;
+float a, b, c, d;
 
-cout <<"podaj a: ";
+cout << "podaj a: ";
 cin >>a;
 
-cout <<"podaj b: ";
+cout << "podaj b: ";
 cin >>b;
 
-cout <<"podaj c: ";
+cout << "podaj c: ";
 cin >>c;
 
-cout <<"podaj d: ";
+cout << "podaj d: ";
 cin >>d;
 
-if(a>b){
-  cout << " a > b " << "\n";
+
+if (a>b){
+    std::cout << " " << a <<  " > " << b << " " << "\n";
 }
 
-if(b>a){
-  cout << " a < b " << "\n";
+if (a<b){
+    std::cout << " " << a <<  " < " << b << " " << "\n";
 }
 
-if(a==b){
-  cout << " a = c " << "\n";
+if (a==b){
+    std::cout << " " << a <<  " == " << b << " " << "\n";
 }
 
-if(a>c){
-  cout << " a > b " << "\n";
+if (a>c){
+    std::cout << " " << a <<  " > " << c << " " << "\n";
 }
 
-if(c>a){
-  cout << " a < c " << "\n";
+if (a<c){
+    std::cout << " " << a <<  " < " << c << " " << "\n";
 }
 
-if(a==c){
-  cout << " a = c " << "\n";
+if (a==c){
+    std::cout << " " << a <<  " == " << c << " " << "\n";
 }
 
-if(a>d){
-  cout << " a > d " << "\n";
+if (a>d){
+    std::cout << " " << a <<  " > " << d << " " << "\n";
 }
 
-if(d>a){
-  cout << " a < d " << "\n";
-}
-if(a==d){
-  cout << " a = d " << "\n";
+if (a<d){
+    std::cout << " " << a <<  " < " << d << " " << "\n";
 }
 
-if(b>c){
-  cout << " b > c " << "\n";
+if (a==d){
+    std::cout << " " << a <<  " == " << d << " " << "\n";
 }
 
-if(c>b){
-  cout << " b < c " << "\n";
-}
-if(c==b){
-  cout << " b = c " << "\n";
+if (b>d){
+    std::cout << " " << b <<  " > " << d << " " << "\n";
 }
 
-if(b>d){
-  cout << " b > d " << "\n";
+if (b<d){
+    std::cout << " " << b <<  " < " << d << " " << "\n";
 }
 
-if(d>b){
-  cout << " b < d " << "\n";
-}
-if(d==b){
-  cout << " b = d " << "\n";
+if (b==d){
+    std::cout << " " << b <<  " == " << d << " " << "\n";
 }
 
-if(c>d){
-  cout << " c > d " << "\n";
+if (b>c){
+    std::cout << " " << b <<  " > " << c << " " << "\n";
 }
 
-if(d>c){
-  cout << " c < d " << "\n";
+if (b<c){
+    std::cout << " " << b <<  " < " << c << " " << "\n";
 }
 
-if(d==c){
-  cout << " c = d " << "\n";
+if (b==c){
+    std::cout << " " << b <<  " == " << c << " " << "\n";
+}
+
+if (c>d){
+    std::cout << " " << c <<  " > " << d << " " << "\n";
+}
+
+if (c<d){
+    std::cout << " " << c <<  " < " << d << " " << "\n";
+}
+
+if (c==d){
+    std::cout << " " << c <<  " == " << d << " " << "\n";
 }
 }
