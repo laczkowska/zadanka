@@ -2,31 +2,30 @@
 
 using namespace std;
 
-auto main () -> int{
-int a,b,s;
+auto main () -> int
 
-cout <<"podaj a: ";
+{
+
+int a, b, s;
+
+cout << "podaj a: ";
 cin >>a;
 
-cout <<"podaj b: ";
+cout << "podaj b: ";
 cin >>b;
 
-cout <<"podaj s: ";
+cout << "podaj s: ";
 cin >>s;
 
 if (s==0){
-	cout<< "zle c rowne 0" << "\n";
+    std::cout <<  "zle s rowne 0"  << "\n";
 }
 else{
+        do{
+                cout << a << '\n';
+                a++;
 
-
-	do{
-		cout<<a<<'\n';
-		a++;
-		
-		
-	}while(a<b);
-
+       }while(a<b);
 }
 
 }
