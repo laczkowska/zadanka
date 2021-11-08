@@ -6,31 +6,30 @@ auto main () -> int
 
 {
 
-int a, b, c, d;
+float a, b, c;
 
-cout <<"podaj a: ";
+cout << "podaj a: ";
 cin >>a;
 
-cout <<"podaj b: ";
+cout << "podaj b: ";
 cin >>b;
 
-cout <<"podaj c: ";
+cout << "podaj c: ";
 cin >>c;
 
-if(a>b && a>c){
-  cout << a << "\n";
+if (a>b && a>c){
+    cout << a << "\n";
 }
 
-if(b>a && b>c){
-  cout << b << "\n";
+if (a<b && c<b){
+    cout << b << "\n";
 }
 
-if(c>a && c>a){
-  cout << c << "\n";
+if (a<c && b<c){
+    cout << c << "\n";
 }
 
-if(a==b && a==c && b==c){
-  cout << "są rowne" << "\n";
-
+if (a==b && a==c && b==c){
+    cout << "sa rowne" << "\n";
 }
 }
