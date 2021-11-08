@@ -6,22 +6,23 @@ auto main () -> int
 
 {
 
-int a,b,c;
+float a, b;
 
-cout <<"podaj a: ";
+cout << "podaj a: ";
 cin >>a;
 
-cout <<"podaj b: ";
+cout << "podaj b: ";
 cin >>b;
 
-if(a>b){
-  cout << " a > b " << "\n";
+if (a>b){
+    std::cout << "a > b"  << "\n";
 }
 
-if(b>a){
-  cout << " a < b " << "\n";
+if (a<b){
+    std::cout <<  "a < b"  << "\n";
 }
-if(a==b){
-  cout << " a = b " << "\n";
+
+if (a==b){
+    std::cout <<  "a == b"  << "\n";
 }
 }
