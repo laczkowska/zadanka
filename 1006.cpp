@@ -15,14 +15,14 @@ cout << "podaj b: ";
 cin >>b;
 
 if (a>b){
-    std::cout << "a > b"  << "\n";
+    std::cout << " " << a <<  " > " << b << " " << "\n";
 }
 
 if (a<b){
-    std::cout <<  "a < b"  << "\n";
+    std::cout << " " << a <<  " < " << b << " " << "\n";
 }
 
 if (a==b){
-    std::cout <<  "a == b"  << "\n";
+    std::cout << " " << a <<  " == " << b << " " << "\n";
 }
 }
