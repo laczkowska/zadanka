@@ -6,19 +6,19 @@ auto main () -> int
 
 {
 
-int a;
+float a;
 
-cout <<"podaj a: ";
+cout << "podaj a: ";
 cin >>a;
 
-if(a>0){
-  cout << a << "\n";
+
+if (a<0){
+
+    cout << a*-1 << "\n";
 }
-auto zmienna = -1;
-if(0>a){
-  cout << a*zmienna << "\n";
+
+else{   
+    cout << a << "\n";
 }
-if(a==0){
-  cout << 0 << "\n";
-}
+
 }
