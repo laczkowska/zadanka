@@ -2,24 +2,24 @@
 
 using namespace std;
 
-int main () 
+auto main () -> int
 
 {
 
-int a, silnia, b;
+int a, b, silnia;
 
-cout <<"podaj liczbe do silni: ";
-cin >>b ;
+cout << "podaj liczbe do silni: ";
+cin >>b;
 
-a = 1;
 silnia = 1;
+a = 1;
 
-while ( a <= b) {
+while ( a<= b ){
     silnia=silnia*a;
-a++ ;
+a++;
 
 }
-cout << silnia << "\n";
+cout << silnia << '\n';
 
 return 0;
 
