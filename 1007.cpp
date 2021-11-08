@@ -6,19 +6,21 @@ auto main () -> int
 
 {
 
-int a;
+float a;
 
-cout <<"podaj a: ";
+cout << "podaj a: ";
 cin >>a;
 
-if(a>0){
-  cout << "1" << "\n";
+
+if (a>0){
+    std::cout << "1"  << "\n";
 }
 
-if(0>a){
-  cout << "-1" << "\n";
+if (a<0){
+    std::cout <<  "-1"  << "\n";
 }
-if(a==0){
-  cout << "0" << "\n";
+
+if (a==0){
+    std::cout <<  "0"  << "\n";
 }
 }
