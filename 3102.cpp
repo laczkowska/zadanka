@@ -22,10 +22,10 @@ int main ()
     for (int i=0; i<n; i++)
     {
         cout << "podaj liczbę start: " << '\n';
-        cin >> a;
+        cin >> i;
         cout << '\n';
 
-        for (int a=0; a<=n; a++)
+        for (int a=i; a<=n; a++)
         {
             cout << a << '\n';
             
