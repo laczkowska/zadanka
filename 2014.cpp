@@ -6,33 +6,46 @@ auto main () -> int
 
 {
 
-int a, b;
+int a;
 
-cout << "podaj dlugosc boku kwadratu a: ";
+cout << "podaj dlugosc boku a: ";
 cin >>a;
 
-
 if (a<3)
-    cout <<  "zle a mniejsze od 3"  << "\n";
+    cout << "zle a mniejsze od 3 " << '\n';
+
 else
 {
-    for (int j=0; j<a - 2; j++)
+    for (int n=1; n<a; n++)
     {
         cout << "*";
-        for (int i=1; i<=a - 2; ++i)
+    }
+    for (int j=0; j<a-1; j++)
+    {
+        cout << "*";
+        for (int i=2; i<=a-1; i++)
         {
             cout << " ";
         }
         cout << "*" << '\n';
     }
 
-    for (int n = 1; n<=a; n++)
+    for (int n=1; n<=a; n++)
     {
         cout << "*";
-    } 
-}
-
+        }
+        cout << '\n';
+    }
 
 return 0;
 
 }
+
+
+
+
+
+
+
+
+
