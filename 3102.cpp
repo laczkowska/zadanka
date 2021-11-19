@@ -4,31 +4,36 @@ using namespace std;
 
 int main ()
 
-{ 
+{
+
     const int max=100;
     float tab[max];
-    int n, a;
+    int n;
 
-        cout << "podaj jak dluga ma byc tablica: ";
+        cout << "podaj wielkosc tablicy: ";
         cin >> n;
+
     do
     {
-        
+    
         if (n<=0 || n>max)
-            cout << "zle liczba mniejsza od 0 lub wieksza od 100, po za zakresem" << '\n';;
+            cout << "zle liczba mniejsza od 0 lub wieksza od 100, po za zakresem " <<'\n';
+           
+        else 
+            cout << "tablica zatwierdzona" << '\n';
+            
     }
     while (n==0 || n>max);
 
-    for (int i=0; i<n; i++)
+    for (int i=1; i++;)
     {
-        cout << "podaj liczbę start: " << '\n';
-        cin >> i;
+        cout << "podaj " << i << " element" << '\n';
+        cin >> tab[i];
         cout << '\n';
 
         for (int a=i; a<=n; a++)
         {
-            cout << a << '\n';
-            
+        cout << a << '\n';
         }
     }
 
