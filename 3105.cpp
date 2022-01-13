@@ -2,55 +2,35 @@
 
 using namespace std;
 
-int main ()
-
+auto main() -> int
 {
+	int A[100];
+    int a, ma, mi;
 
-    int maks=100;
-    int n, min, max;
-    int tab[max];
+    cout << "podaj wielkosc tablicy: " << '\n';
+    cin >> a;
 
-        cout << "podaj wielkosc tablicy: ";
-        cin >> n;
+    while(a > 100)
+        {
+            cout << "zle, wartosc nie moze byc wieksza od 100 " << '\n'; 
+            cin >> a;
+        }
 
-    do
+
+    ma= A[0];
+    mi= A[0];
+
+    for(int i = 0; i < a ; i++)
     {
-    
-        if (n<=0 || n>maks)
-            cout << "zle liczba mniejsza od 0 lub wieksza od 100, po za zakresem " <<'\n';
-           
-        else 
-            cout << "tablica zatwierdzona" << '\n';
-            
+        if (A[i] > ma) ma = i;      
+    }
+    for(int j = 0; j < a ; j++)
+    {
+        if(A[j] < mi) mi = j;        
     }
 
-    while (n==0 || n>maks);
+        cout << "max: " << ma << " " << "wartosc: " << A[ma] << '\n';
+        cout << "min: " << mi << " " << "wartosc: " << A[mi] << '\n';
 
-    for (int i=1; i<=n; i++)
-    {
-        cout << "podaj " << i << " element" << '\n';
-        cin >> tab[i];
-        cout << '\n';
-    }
-
-    for (int i=1; i<n; i++)
-    {
-        if (tab[i]>max) max=tab[i];
-    }
-
-    for (int j=1; j<n; j++)
-    {
-        if (tab[j]<min) min=tab[j];
-    }
-
-    cout << "minimalna wartosc " << min << '\n';
-    cout << "maksymalna wartosc " << max << '\n';
-
-return 0;
+    return 0;
 }
-
-
-
-
-
-
