@@ -2,36 +2,22 @@
 
 using namespace std;
 
-bool czy_pierwsza(int a)
+auto main() -> int
 {
-        if (a < 2)
-            return false;
-
-        for (int i=2; i*i<=a; i++)
-            if (a%i==0)
-                return false;
-
-        return true;
-}
-
-int main ()
-{
-
     int a;
+    cout << "podaj liczbe: " << '\n';
+    cin >> a;
 
-    cout << "podaj a: ";
-    cin >>a;
+	if(a%2==0 && a != 2 && a != 3 && a != 5 && a != 7 && a != 11 || a%3==0 && a != 2 && a != 3 && a != 5 && a != 7 && a != 11 || a%5==0 && a != 2 && a != 3 && a != 5 && a != 7 && a != 11 || a%7==0 && a != 2 && a != 3 && a != 5 && a != 7 && a != 11 ||  a%11==0 && a != 2 && a != 3 && a !=5 && a != 7 && a != 11 )
+	{
+		cout << "nie jest to liczba pierwsza :(" << '\n';
+	}
 
-    if (czy_pierwsza(a))
-        cout << "liczba " << a << " jest pierwsza" << '\n';
-    else
-        cout << "liczba " << a << " nie jest pierwsza" << '\n';
-
+	else
+	{
+		cout << "jest to liczba pierwsza :)" << '\n';
+	}
 
 return 0;
-
 }
-
-
-
 
