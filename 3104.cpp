@@ -2,46 +2,38 @@
 
 using namespace std;
 
-int main ()
-
+auto main() -> int
 {
+    int A[100];
+    int a, suma, start;
 
-    int max=100;
-    int n, i, suma;
-    int tab[max];
-    suma=0;
+    suma = 0;
+    start = 0;
 
-        cout << "podaj wielkosc tablicy: ";
-        cin >> n;
+    cout << "podaj wielkosc tablicy: " << '\n';
+    cin >> a;
+	
+	while(a > 100)
+        {
+            cout << "zle, liczba nie moze byc wieksza od 100 " << '\n'; 
+            cin >> a;
+        }
+        
+        for(int i = 0; i < a; i++)
+        {
 
-    do
+            A[i]=start;         
+            start++;
+        }
+
+
+    for(int i = 0; i < a ; i++)
     {
-    
-        if (n<=0 || n>max)
-            cout << "zle liczba mniejsza od 0 lub wieksza od 100, po za zakresem " <<'\n';
-           
-        else 
-            cout << "tablica zatwierdzona" << '\n';
-            
+        suma += A[i]; 
     }
 
-    while (n==0 || n>max);
+        cout << "suma wynosi: " << suma << '\n';
 
-    srand(time(NULL));
-
-    for (i=0; i<n; i++) 
-        tab[i]=rand()%n+1;
-        cout << "elementy tablicy: " << '\n';
-
-    for (i=0; i<n; i++){
-        suma=suma+tab[i];
-        cout << tab[i] << " ";
-    }
-
-    cout << "suma liczb wynosi:  " << suma << '\n';
-
-
-
-return 0;
-
+    return 0;
 }
+
