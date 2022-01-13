@@ -3,22 +3,23 @@
 
 using namespace std;
 
-int n=50;
-int a;
-
-int main()
+auto main() -> int
 {
-    int tab[n];
-        cout << "podaj liczbe a: ";
-        cin >> a;
+      int a;
 
-    srand(time(NULL));
+      cout << "podaj max wartosc tablicy: " << '\n';
+      cin >> a;
 
-    for(size_t i=0; i<n; i++)
-    {
-        tab[i] = rand()%a+1;
 
-        cout << tab[i] << ' ';
-    }
-    cout << '\n';
+        int A[50];
+
+        for(int i = 0; i < 50; i++)
+        {
+
+            A[i] = rand()%(a+1);   
+
+            cout << A[i] << '\n';
+
+        }
+    return 0;
 }
