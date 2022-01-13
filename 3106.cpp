@@ -2,51 +2,49 @@
 
 using namespace std;
 
-int main ()
+auto main() -> int
+{ 
+	    int a, w, i, s;
 
-{
-
-	   int n, i; 
-       int wartosc, start;
-	   start = 0;
-	   i=0;
+	    s = 0;
+	    i=0;
 	   
-	   int tab[100];
+	    int tablica[100];
 	   
-        cout<<"wprowadz zakres tablicy: " << '\n';
-        cin>>n;
+        cout << "podaj wielkosc tablicy: " << '\n';
+        cin >> a;
     
-    while(n>100 || n<0)
+    while(a > 100)
         {
-            cout<< "zle liczba mniejsza od 0 lub wieksza od 100, po za zakresem " <<'\n';
-            cin>>n;
+            cout << "zle, liczba nie moze byc wieksza od 100" << '\n'; 
+            cin >> a;
         }
-
-        cout<<"wprowadz szukana wartosc: "<<'\n';
-        cin>>wartosc;
+    
+        cout << "podaj liczbe poszukiwana w tablicy: " << '\n';
+        cin >> w;
     
   
         
-       for(int i=0; i<n; i++)
+       for(int i = 0; i < a; i++)
         {
 
-            tab[i]=start;         
-            start++;
+            tablica[i] = s;         
+            s++;
         }
 	
-	while (tab[i] !=wartosc)	
+	while (tablica[i] != w)	
 	{
 		i++;
-		if(i>=n){break;} 			
+		if(i >= a){break;} 			
 	}
 	
-	if (i==n)			
+	if (i==a)					
 	{
-	    cout<<"-1\n";
+	    cout << "-1" << '\n';
 	}
 	else
 	{
-	    cout<< "tablica zawiera podana wartosc "<< '\n';		
+	    cout << "tablica zawiera podana wartosc w tablicy w indeksie: " << i << '\n';		
 	}
-return 0;
+	return 0;
 }
